@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>login Page</title>
+    <a href="login.php"></a>
+    <style>
+        body{
+        background-image:url("/images/pinnnnnnk.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: right;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #af839d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background-color:hwb(319 24% 7%);
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+            .round-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    
+   <div class="login-container">
+        <h2><td colspan="2" align="center" ><img src ="/images/loooooooog.jpg"width="40%" height="40%" class="round-image"></td></h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="E-Mail" align="center" maxsize="80">EMAIL </label>
+                <input type="text" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password" align="center"  maxsize="60">PASSWORD</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <button type="submit" class="login-btn"> GO!</button>
+
+            <div> <a href="create.html" class="btn">Sign Up</a></div>
+        
+            <p id="errorMessage" class="error-message">  your email or your password is incorrect !</p>
+        </form>
+    </div>
+
+
+
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(lgpg) {
+            lgpg.preventDefault();
+            
+            // wach dakhlna information
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if(email === " " &&  password === " ")
+             {
+                alert("done");
+                
+            } 
+        else {
+                document.getElementById('errorMessage').style.display = 'block';
+            }
+        }
+    );
+
+ </script>
+  <a href="daw.php"></a>
+</body>
+</html>

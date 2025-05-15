@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+  <title>Pink Beauty Shop</title>
+
+ 
+  <style>
+    body{
+           
+               background-image:url("/images/backblur.jpg") ;
+               background-repeat: no-repeat;
+               background-size: cover;
+               }
+       .login-btn{
+           background-color: #ca2bca;
+           color: aliceblue;
+           border:none;
+           border-radius: 10px;
+       }
+       .login-btn :hover{
+           background-color: hsl(316, 26%, 47%);
+       }
+        .shadow-frame{
+           box-shadow: 0px 0px 10px gray;
+           border-radius: 10px;
+       }
+       .framed-image{
+           border:10px solid black ;
+           width:60px;
+           height :auto;
+       }
+       img:hover{
+           width: 200px;
+           height: 200px;
+   
+       }
+       img{
+           border-radius: 50px;
+       }
+      
+   
+       
+   </style>
+</head>
+<body>
+    <table  cellspacing="4" align="center" width="70%">
+        <td style="color :darkmagenta;"><a href="commande.html"> BUY FROM HERE !</a></td><br>
+        <td colspan="3" style="color :#ad20a6;"><h2><i><marquee direction="right" scrollamount="5">PINK BEAUTY SHOP</marquee></i></h2></td>
+    <td style="color :darkmagenta;"><a href="login.html"> LOGIN </a></td><br>
+    <br><tr></tr>
+
+
+        <td align="center"colspan="4"><h4><span style="color :rgb(2, 21, 77);" ><I><b> CONCELER</b></I></span></h4></td>
+        <tr></tr>
+        <td><a href="commande_produit1.html"><img src="/images/conceler1.jpg" width="100" height="200"></a></td>
+        <td><a href="commande_produit2.html"><img src="/images/conceler2.jpg" width="100" height="150"></a></td>
+        <td><a href="commande_produit3.html"><img src="/images/conceler3.jpg" width="100" height="150"></a></td>
+        <td><a href="commande_produit4.html"><img src="/images/conceler4.jpg" width="100" height="150"></a></td>
+        <tr></tr>
+        
+   <tr></tr>
+     
+   <td align="center"colspan="4"><h4><span style="color :rgb(2, 21, 77);" ><I><b> BLUSH</b></I></span></h4></td>
+    </tr>
+    <tr>
+        <td><a href="commande_produit5.html"><img src="/images/blush1.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit6.html"><img src="/images/blush2.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit7.html"><img src="/images/blush3.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit8.html"><img src="/images/blush4.jpg" width="150" height="120"></a><p></p></td>
+        <tr></tr>
+
+        <td align="center"colspan="4"><h4><span style="color :rgb(2, 21, 77);" ><I><b> MASCARA</b></I></span></h4></td>
+    </tr>
+    <tr>
+        <td><a href="commande_produit9.html"><img src="/images/mascara1.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit10.html"><img src="/images/mascara2.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit11.html"><img src="/images/mascara3.jpg" width="100" height="120"></a><p></p></td>
+        <td><a href="commande_produit12.html"><img src="/images/mascara4.jpg" width="160" height="120"></a><p></p></td>
+        <tr></tr>
+
+        <td align="center"colspan="4"><h4><span style="color :rgb(2, 21, 77);" ><I><b> GLOSS</b></I></span></h4></td>
+    </tr>
+    <tr>
+        <td><a href="commande_produit9.html13"><img src="/images/gloss1.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit10.html14"><img src="/images/gloss2.jpg" width="150" height="120"></a><p></p></td>
+        <td><a href="commande_produit11.html15"><img src="/images/gloss3.jpg" width="100" height="120"></a><p></p></td>
+        <td><a href="commande_produit12.html16"><img src="/images/gloss4.jpg" width="100" height="150"></a><p></p></td>
+        <tr></tr>
+    </tr>
+    <tr>
+       
+  </table>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+       
+        
+       
+        marquee.innerHTML = '';
+        marquee.style.overflow = 'visible';
+        
+        
+        originalText.split('').forEach((char, index) => {
+            if (char === ' ') char = '&nbsp;'; 
+            
+            const bubble = document.createElement('span');
+            bubble.innerHTML = char;
+            bubble.style.display = 'inline-block';
+            bubble.style.fontSize = '24px';
+            bubble.style.color = getRandomColor();
+            bubble.style.margin = '0 5px';
+            bubble.style.transition = 'all 0.3s ease';
+            
+           
+            marquee.appendChild(bubble);
+            
+           
+            setInterval(() => {
+                bubble.style.transform = `translateY(${Math.sin(Date.now()/500 + index) * 10}px)`;
+                bubble.style.color = getRandomColor();
+            }, 100);
+        });
+        
+       
+       
+    });
+    </script>
+ 
+    
+    
+     
+</body>
+</html>

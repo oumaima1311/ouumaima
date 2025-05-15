@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+  <title>Order Product</title>
+  <script src="validation.js"></script>
+</head>
+<body>
+
+
+<h1>Order Product</h1>
+
+<form method="post" action="commande.php" onsubmit="return Validation_order();">
+
+
+
+    <img src="/images/blush4.jpg" width="150" height="150"><br>
+    Vendeur: <input type="text" value="BLUSH" disabled><br>
+    Prix: <input type="text" value="850 DA" disabled><br>
+    Référence: <input type="text" value="C008" disabled><br>
+    Couleur: <input type="checkbox" name="color[]" value="red"> red
+             <input type="checkbox" name="color[]" value="nude"> nude<br>
+    Quantité: 
+    
+        <input type ="number"value="1">
+   <br>
+    <input type="submit" value="Commander">
+  </form>
+  </body></html>

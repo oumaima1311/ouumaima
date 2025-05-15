@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Creating a new account</title>
+    <a href="create.php"></a>
+    <style>
+        body {
+            background-image:url("/images/backblur.jpg" )  ;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+        
+        }
+        .whait-text {
+            color: #000000;
+        }
+    
+        .signup-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(52, 40, 40, 0.1);
+            width: 350px;
+        }
+        .signup-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px 20px 10px 15px;
+ 
+        }
+        .signup-btn:hover {
+            background-color: #45a049;
+          
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+
+        
+    </style>
+</head>
+<body> 
+    
+  
+<table class="whait-text" > 
+    
+    <div border="1" align="center" width="60%" height="50%" border:10px solid black>
+  
+       
+    
+        <th><label for = "Familly Name" placeholder="your Familly Name">Familly Name :</placeholder></label></th>
+        <td><input type ="text"id="Familly Name" ></td></div>
+
+        <tr></tr><div>
+
+        <th><label for = "First Name" placeholder="your First Name">First Name :</label></th>
+        <td><input type ="text"id="First Name" ></td></div>
+
+        <tr></tr>
+
+        <th><label for = "Age" placeholder="how old are u" min="10">Age:</label></th>
+        <td><input type ="number"value="1"></td>
+
+        <tr></tr>
+
+        <th><label for = "Wilaya">Select a Wilaya </label></th>
+         <td>
+            <select id="wilaya" name="wilaya">
+                <option value="1">Adrar</option>
+                <option value="2">Chlef</option>
+                <option value="3">Laghouat</option>
+                <option value="4">Oum El Bouaghi</option>
+                <option value="5">Batna</option>
+                <option value="6">Béjaïa</option>
+                <option value="7">Biskra</option>
+                <option value="8">Béchar</option>
+                <option value="9">Blida</option>
+                <option value="11">Bouira</option>
+                <option value="12">tebessa</option>
+                <option value="13">tlemcen</option>
+                <option value="14">tiaret</option>
+                <option value="15">tizi ouazou</option>
+                <option value="16">alger</option>
+                <option value="17">djelfa</option>
+                <option value="18">djijel</option>
+                <option value="19">setif</option>
+                <option value="20">saida</option>
+                <option value="21">skikda</option>
+                <option value="22">sidi bel abbas</option>
+                <option value="23">annaba</option>
+                <option value="24">geulma</option>
+                <option value="25">constantine</option>
+                <option value="26">media</option>
+                <option value="27">mostaganem</option>
+                <option value="28">messila</option>
+                <option value="29">meaasker</option>
+                <option value="30">ourgela</option>
+                <option value="31">oran</option>
+                <option value="32">el bayed</option>
+                <option value="33">ilizi</option>
+                <option value="34">bordj bou ariridj</option>
+                <option value="35">boumerdass</option>
+                <option value="36">el tref</option>
+                <option value="37">tindouf</option>
+                <option value="38">tessmssilet</option>
+                <option value="39">el ouadi</option>
+                <option value="40">khanchela</option>
+                <option value="41">soug ahrass</option>
+                <option value="42">tipaza</option>
+                <option value="43">mila</option>
+                <option value="44">ain defla</option>
+                <option value="45">neaama</option>
+                <option value="46">ain timouchent</option>
+                <option value="47">ghardaia</option>
+                <option value="48">ghilizan</option>
+                
+            
+            
+            </td>
+
+        <tr></tr>
+
+        <th><label for = "phone">phone :</label></th>
+        <td><input type ="tel"id="phone"name="phone"placeholder="+213 0*********"></td>
+        <tr></tr>
+
+
+        <th><label for = "Email" name="email" placeholder="Spants@gmail.com">Email :</label></th>
+        <td><input type ="email"id="Email"name="Email">
+        <tr></tr>
+
+
+        <th><label for = "Address" name ="address"placeholder="where do you live !">Address:</label></th>
+        <td><input type ="text"id="Address"name="Address">
+
+
+        <tr></tr>
+
+
+        <th><label for = "Password">Password :</label></th>
+        <td><input type="password"id="Password"Name="Password"></td>
+
+
+        <tr></tr>
+        <th><label for = "password">Confirm Password :</label></th>
+        <td><input type="password"id="Password"Name="Password"></td>
+
+
+        <tr></tr>
+
+
+        <th><label for = "sexe">Sexe :</label></th>
+        <td>
+            <input type="radio"id="man"gender="man"name="title">
+                <label for "man">man</label>
+                <input type="radio"id="woman"gender="woman"name="title">
+                    <label for "woman">woman</label></td>
+          
+        
+
+        <tr></tr>
+    
+    
+        <th><button type="button" class="btn " align="center">DONE</button></th>
+        <th><button type="button"  class="btn" align="center" >DELETE</button>
+            <tr></tr>
+            <td style="color :darkmagenta;" align="center"><a href="commande.html" align="center"> BUY FROM HERE !</a></td><br>
+    </table>
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const form = document.querySelector('table');
+    const doneBtn = document.querySelector('.btn:first-of-type');
+    const deleteBtn = document.querySelector('.btn:last-of-type');
+    const passwordInput = document.querySelector('input[type="password"]:first-of-type');
+    const confirmPasswordInput = document.querySelector('input[type="password"]:last-of-type');
+    const emailInput = document.querySelector('input[type="email"]');
+    const phoneInput = document.querySelector('input[type="tel"]');
+
+    
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+   
+    function isValidPhone(phone) {
+        const re = /^\+213\s0[5-7]\d{8}$/;
+        return re.test(phone);
+    }
+
+    
+    function validatePassword() {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            alert('Passwords do not match!');
+            return false;
+        }
+        return true;
+    }
+
+   
+    doneBtn.addEventListener('click', function() {
+        
+        const familyName = document.getElementById('Familly Name').value;
+        const firstName = document.getElementById('First Name').value;
+        const age = document.querySelector('input[type="number"]').value;
+        const wilaya = document.getElementById('wilaya').value;
+        const sexe = document.querySelector('input[name="title"]:checked');
+
+        if (!familyName || !firstName || !age || !wilaya || !sexe) {
+            alert('Please fill in all required fields!');
+            return;
+        }
+
+        if (!isValidEmail(emailInput.value)) {
+            alert('Please enter a valid email address!');
+            return;
+        }
+
+        if (!isValidPhone(phoneInput.value)) {
+            alert('Please enter a valid Algerian phone number (e.g., +213 0551234567)');
+            return;
+        }
+
+        if (!validatePassword()) {
+            return;
+        }
+
+        
+        alert('Account created successfully!');
+        console.log('Form data:', {
+            familyName,
+            firstName,
+            age,
+            wilaya,
+            phone: phoneInput.value,
+            email: emailInput.value,
+            address: document.getElementById('Address').value,
+            sexe: sexe.value
+        });
+    });
+
+    
+    deleteBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear the form?')) {
+            form.reset(); 
+        }
+    });
+
+    
+    confirmPasswordInput.addEventListener('input', function() {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            confirmPasswordInput.style.borderColor = 'red';
+        } else {
+            confirmPasswordInput.style.borderColor = '#ddd';
+        }
+    });
+});
+</script>
+
+
+            
+</body>
+</html>
